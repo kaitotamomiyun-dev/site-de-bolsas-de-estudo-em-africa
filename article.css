@@ -1,0 +1,413 @@
+/* ==========================================================================
+   PÁGINA DE ARTIGO — estilos específicos (usa os tokens de :root em style.css)
+   ========================================================================== */
+
+/* ---------- Faixa de destaque (topo) ---------- */
+.announce-bar {
+  background: linear-gradient(90deg, var(--blue-500), var(--green-500));
+  border-bottom: 3px solid var(--navy-900);
+  text-align: center;
+  padding: 10px 16px;
+  overflow: hidden;
+}
+
+.announce-bar p {
+  color: var(--white);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+/* ---------- Cabeçalho do blog ---------- */
+.post-site-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 44px 24px 26px;
+}
+
+.post-site-title {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  color: var(--blue-500);
+  text-decoration: none;
+  margin-bottom: 22px;
+}
+
+.post-site-title span {
+  color: var(--navy-700);
+}
+
+.post-search-bar {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, var(--navy-800), var(--blue-500));
+  border-radius: var(--radius-md);
+  padding: 6px 6px 6px 22px;
+  box-shadow: var(--shadow-soft);
+}
+
+.post-search-bar input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  padding: 14px 0;
+}
+
+.post-search-bar input::placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.post-search-bar button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--white);
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.post-search-bar button:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+/* ---------- Breadcrumb ---------- */
+.breadcrumb {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--gray-600);
+  margin-bottom: 18px;
+}
+
+.breadcrumb a {
+  color: var(--gray-600);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: var(--blue-500);
+}
+
+.breadcrumb span[aria-current] {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* ---------- Layout de 2 colunas: artigo + sidebar ---------- */
+.post-layout {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px 60px;
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 48px;
+  align-items: start;
+}
+
+/* ---------- Conteúdo do artigo ---------- */
+.post-content h1 {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3.4vw, 2.3rem);
+  color: var(--navy-900);
+  line-height: 1.25;
+  margin-bottom: 20px;
+}
+
+.post-divider {
+  border: none;
+  border-top: 1px solid var(--gray-200);
+  margin-bottom: 24px;
+}
+
+.visits-badge {
+  display: inline-block;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-sm);
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  color: var(--gray-600);
+  margin-bottom: 28px;
+}
+
+.visits-badge strong {
+  color: var(--blue-500);
+}
+
+.post-content p {
+  color: var(--ink);
+  font-size: 1.02rem;
+  line-height: 1.75;
+  margin-bottom: 20px;
+}
+
+.post-image {
+  margin: 32px 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.post-image img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* ---------- Tags ---------- */
+.post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 36px 0 20px;
+  padding-top: 24px;
+  border-top: 1px solid var(--gray-200);
+}
+
+.post-tags span {
+  color: var(--gray-600);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.post-tags a {
+  color: var(--gray-600);
+  background: var(--gray-50);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.post-tags a:hover {
+  background: var(--blue-500);
+  color: var(--white);
+}
+
+/* ---------- Botões de partilha ---------- */
+.share-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  color: var(--white);
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.share-btn:hover {
+  opacity: 0.88;
+  transform: translateY(-2px);
+}
+
+.share-icon {
+  font-weight: 700;
+}
+
+.share-facebook  { background: #1877f2; }
+.share-x         { background: #0f1419; }
+.share-pinterest { background: #e60023; padding: 10px 14px; }
+.share-linkedin  { background: #0a66c2; padding: 10px 14px; }
+.share-whatsapp  { background: #25d366; padding: 10px 14px; }
+.share-email     { background: var(--gray-600); padding: 10px 14px; }
+
+/* ---------- Sidebar do artigo ---------- */
+.search-widget {
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+
+.search-widget h2 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--navy-900);
+  margin-bottom: 16px;
+}
+
+.search-widget form {
+  display: flex;
+  gap: 8px;
+}
+
+.search-widget input {
+  flex: 1;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-sm);
+  padding: 11px 14px;
+  font-size: 0.9rem;
+  font-family: var(--font-body);
+  outline: none;
+}
+
+.search-widget input:focus {
+  border-color: var(--blue-500);
+}
+
+.search-widget button {
+  background: var(--blue-500);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 0 18px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.search-widget button:hover {
+  background: var(--navy-800);
+}
+
+/* ---------- Rodapé com Posts Populares ---------- */
+.post-footer {
+  background: var(--navy-950);
+  color: rgba(255, 255, 255, 0.75);
+  padding-top: 56px;
+}
+
+.post-footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.footer-brand-name {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+
+.footer-brand-name strong {
+  color: var(--green-400);
+}
+
+.footer-brand p {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  max-width: 320px;
+}
+
+.popular-posts h2 {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.popular-post-item {
+  display: flex;
+  gap: 14px;
+  text-decoration: none;
+  margin-bottom: 18px;
+}
+
+.popular-post-item img {
+  width: 68px;
+  height: 52px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.popular-post-title {
+  color: var(--white);
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 4px;
+  transition: color 0.25s ease;
+}
+
+.popular-post-item:hover .popular-post-title {
+  color: var(--blue-400);
+}
+
+.popular-post-date {
+  color: var(--gray-400);
+  font-size: 0.78rem;
+}
+
+.post-footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.85rem;
+}
+
+.post-footer-bottom nav {
+  display: flex;
+  gap: 18px;
+}
+
+.post-footer-bottom a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+}
+
+.post-footer-bottom a:hover {
+  color: var(--white);
+}
+
+/* ==========================================================================
+   RESPONSIVO
+   ========================================================================== */
+@media (max-width: 900px) {
+  .post-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .post-footer-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .post-site-header { padding-top: 30px; }
+  .share-buttons { gap: 8px; }
+  .share-btn { padding: 9px 12px; font-size: 0.82rem; }
+}
