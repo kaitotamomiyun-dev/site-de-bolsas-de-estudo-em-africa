@@ -218,7 +218,16 @@ img {
   opacity: 0;
   animation: heroFade 30s infinite;
   will-change: opacity, transform;
+  background-image: linear-gradient(135deg, rgba(17, 48, 42, 0.8), rgba(143, 87, 116, 0.45));
+  background-blend-mode: multiply;
 }
+
+.hero-slide-1 { background-image: linear-gradient(135deg, rgba(17, 48, 42, 0.92), rgba(143, 87, 116, 0.35)), radial-gradient(circle at 20% 20%, rgba(255,255,255,0.25), transparent 25%), linear-gradient(120deg, #0f3d36 0%, #1d6a4b 45%, #8f5774 100%); }
+.hero-slide-2 { background-image: linear-gradient(135deg, rgba(17, 48, 42, 0.90), rgba(224, 130, 157, 0.35)), radial-gradient(circle at 80% 30%, rgba(255,255,255,0.18), transparent 22%), linear-gradient(120deg, #11302a 0%, #036264 50%, #e0829d 100%); }
+.hero-slide-3 { background-image: linear-gradient(135deg, rgba(17, 48, 42, 0.90), rgba(143, 87, 116, 0.30)), radial-gradient(circle at 30% 70%, rgba(255,255,255,0.16), transparent 18%), linear-gradient(120deg, #143931 0%, #0b7c7e 45%, #a8728c 100%); }
+.hero-slide-4 { background-image: linear-gradient(135deg, rgba(17, 48, 42, 0.90), rgba(224, 130, 157, 0.20)), radial-gradient(circle at 70% 20%, rgba(255,255,255,0.16), transparent 20%), linear-gradient(120deg, #11302a 0%, #8f5774 55%, #e79fb3 100%); }
+.hero-slide-5 { background-image: linear-gradient(135deg, rgba(17, 48, 42, 0.95), rgba(143, 87, 116, 0.30)), radial-gradient(circle at 20% 80%, rgba(255,255,255,0.15), transparent 18%), linear-gradient(120deg, #036264 0%, #143931 45%, #dac4d0 100%); }
+.hero-slide-6 { background-image: linear-gradient(135deg, rgba(17, 48, 42, 0.92), rgba(224, 130, 157, 0.22)), radial-gradient(circle at 60% 40%, rgba(255,255,255,0.18), transparent 20%), linear-gradient(120deg, #0b7c7e 0%, #11302a 55%, #8f5774 100%); }
 
 .hero-slide:nth-child(1) { animation-delay: 0s; }
 .hero-slide:nth-child(2) { animation-delay: -5s; }
