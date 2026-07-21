@@ -4,14 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bolsas de Estudo para Africanos | Futuro, Educação e Conexão Global</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
-
-  <!-- ============ SIDEBAR (100% CSS, sem JS) ============ -->
   <aside class="sidebar">
     <div class="sidebar-tab" aria-hidden="true">☰</div>
     <div class="sidebar-inner">
@@ -30,26 +25,19 @@
     </div>
   </aside>
 
-  <!-- ============ FAIXA DE PUBLICIDADE (discreta) ============ -->
   <div class="ad-bar">
-    <span class="ad-bar-label">Publicidade</span>
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-xxxxxxxxxx"
-         data-ad-slot="1234567890"
-         data-ad-format="auto"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    <span class="ad-bar-label">Conteúdo local</span>
+    <p>Sem backend, sem anúncios externos e sem dependências de terceiros.</p>
   </div>
 
-  <!-- ============ HERO CINEMATOGRÁFICO ============ -->
   <header class="hero" id="hero">
     <div class="hero-slides" aria-hidden="true">
-      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1920&q=70')"></div>
-      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1920&q=70')"></div>
-      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1920&q=70')"></div>
-      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=1920&q=70')"></div>
-      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1920&q=70')"></div>
-      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=70')"></div>
+      <div class="hero-slide hero-slide-1"></div>
+      <div class="hero-slide hero-slide-2"></div>
+      <div class="hero-slide hero-slide-3"></div>
+      <div class="hero-slide hero-slide-4"></div>
+      <div class="hero-slide hero-slide-5"></div>
+      <div class="hero-slide hero-slide-6"></div>
     </div>
 
     <div class="hero-overlay"></div>
@@ -62,12 +50,6 @@
       <span style="top:78%; left:90%; animation-duration:20s; animation-delay:-9s;"></span>
       <span style="top:35%; left:48%; animation-duration:22s; animation-delay:-4s;"></span>
       <span style="top:55%; left:70%; animation-duration:15s; animation-delay:-7s;"></span>
-      <span style="top:85%; left:35%; animation-duration:19s; animation-delay:-3s;"></span>
-      <span style="top:8%; left:60%; animation-duration:17s; animation-delay:-11s;"></span>
-      <span style="top:45%; left:20%; animation-duration:21s; animation-delay:-5s;"></span>
-      <span style="top:30%; left:92%; animation-duration:13s; animation-delay:-8s;"></span>
-      <span style="top:70%; left:55%; animation-duration:23s; animation-delay:-10s;"></span>
-      <span style="top:18%; left:38%; animation-duration:16s; animation-delay:-12s;"></span>
     </div>
 
     <div class="hero-content">
@@ -83,15 +65,11 @@
     <div class="scroll-indicator" aria-hidden="true"><span></span></div>
   </header>
 
-  <!-- ============ INTRODUÇÃO ============ -->
   <div class="intro">
     <h2>O mundo tem espaço para o teu talento</h2>
-    <p>Estudar na Europa e noutros continentes abre portas para oportunidades académicas e
-       profissionais, além de promover intercâmbio cultural e crescimento pessoal.</p>
+    <p>Estudar na Europa e noutros continentes abre portas para oportunidades académicas e profissionais, além de promover intercâmbio cultural e crescimento pessoal.</p>
   </div>
 
-  <!-- ============ BARRA "EM DESTAQUE" (ticker) ============ -->
-  <!-- Preenchida por renderTrendingTicker() -->
   <div class="trending-bar">
     <span class="trending-label">Em Destaque</span>
     <div class="trending-ticker" id="trending-ticker">
@@ -99,8 +77,6 @@
     </div>
   </div>
 
-  <!-- ============ MOSAICO DE DESTAQUES (1 grande + 3 pequenos) ============ -->
-  <!-- Preenchido por renderHeroGrid() -->
   <section class="hero-grid-section" aria-labelledby="destaques-titulo">
     <div class="artigos-cabecalho">
       <span class="section-eyebrow">Conteúdo em destaque</span>
@@ -112,14 +88,10 @@
     </div>
   </section>
 
-  <!-- ============ "NÃO PERCAS" (lista + abas) + SIDEBAR ============ -->
   <section class="dont-miss-section" id="artigos" aria-labelledby="dont-miss-titulo">
-
     <div class="dont-miss-main">
       <div class="dont-miss-header">
         <h2 id="dont-miss-titulo">Não Percas</h2>
-
-        <!-- Cada botão tem data-category; o JS re-filtra #dont-miss-list ao clicar -->
         <div class="dont-miss-tabs" id="dont-miss-tabs" role="tablist">
           <button class="tab-btn active" data-category="" role="tab" aria-selected="true">Todos</button>
           <button class="tab-btn" data-category="Bolsas de Estudo" role="tab" aria-selected="false">Bolsas</button>
@@ -129,7 +101,6 @@
         </div>
       </div>
 
-      <!-- Preenchido por renderDontMissList() -->
       <div class="dont-miss-list" id="dont-miss-list">
         <p class="list-placeholder">A carregar artigos...</p>
       </div>
@@ -138,7 +109,6 @@
     <aside class="home-sidebar">
       <div class="widget widget-social">
         <h3>Fica Conectado</h3>
-        <!-- Estático por agora — não vem da API de artigos -->
         <div class="social-stats">
           <a href="#" class="social-stat social-facebook">
             <span class="stat-icon">f</span>
@@ -157,55 +127,47 @@
 
       <div class="widget widget-ad">
         <span class="widget-ad-label">Publicidade</span>
-        <div class="ad-placeholder">300 × 250</div>
+        <div class="ad-placeholder">Conteúdo local</div>
       </div>
 
       <div class="widget widget-popular">
         <h3>Populares</h3>
-        <!-- Preenchido por renderPopularSidebar() -->
         <div class="popular-grid" id="sidebar-popular">
           <p class="list-placeholder">A carregar...</p>
         </div>
       </div>
     </aside>
-
   </section>
 
-  <!-- Retângulo original: mantido, agora como CTA estilizado -->
-  <div class="rectangle" onclick="abrirVisitas()">
-    <span>Ver estatísticas de visitas</span>
+  <div class="rectangle" id="visits-stat">
+    <span><a href="article.html?id=1">Ver um estudo de caso completo</a></span>
   </div>
 
-  <!-- ============ INFO: TERMOS / PRIVACIDADE / CONTACTOS ============ -->
   <section class="info-grid">
-
     <div class="info-card" id="termos">
       <span class="info-icon">📜</span>
       <h2>Termos de Uso</h2>
-      <p>Este site fornece informações sobre bolsas de estudo e oportunidades para africanos
-         que desejam estudar no exterior. O conteúdo é apenas informativo e não garante
-         a obtenção de bolsas.</p>
+      <p>Este site fornece informações sobre bolsas de estudo e oportunidades para africanos que desejam estudar no exterior. O conteúdo é apenas informativo e não garante a obtenção de bolsas.</p>
     </div>
 
     <div class="info-card" id="privacidade">
       <span class="info-icon">🔒</span>
       <h2>Política de Privacidade</h2>
-      <p>Respeitamos a privacidade dos nossos utilizadores. O contador de visitas é armazenado
-         apenas localmente no navegador e não é partilhado com terceiros.</p>
+      <p>Respeitamos a privacidade dos nossos utilizadores. O conteúdo é armazenado localmente no navegador e não é partilhado com terceiros.</p>
     </div>
 
     <div class="info-card" id="contactos">
       <span class="info-icon">✉️</span>
       <h2>Contactos</h2>
-      <p>Email: <a href="mailto:juventudevisionaria@gmail.com">exemplo@gmail.com</a></p>
+      <p>Email: <a href="mailto:juventudevisionaria@gmail.com">juventudevisionaria@gmail.com</a></p>
     </div>
-
   </section>
 
   <footer class="site-footer">
     <p>&copy; 2026 Futuro Global — Bolsas de Estudo África</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/home.js"></script>
 </body>
 </html>
